@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-efdo
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0072-tenant/tkwch-fix-0075-0072-app/devfile-sample-efdo@sha256:4ce29247a0dd57480904d21424ef2292ca0082bdf87144276bc3e3f10b7a0859
+        name: my-nodejs
+        resources: {}
+status: {}
